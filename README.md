@@ -2,7 +2,7 @@
 
 A comprehensive, multilingual SVG map of Algeria featuring all 69 administrative divisions (wilayas) with detailed metadata in Arabic, Latin, and structured data attributes.
 
-![Algeria Map Preview](algeria-svg.svg)
+![Algeria Map Preview](map-algeria-69-wilayas.svg)
 
 ## Overview
 
