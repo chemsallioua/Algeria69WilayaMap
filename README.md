@@ -92,7 +92,6 @@ SOFTWARE.
 
 - **Issues**: [GitHub Issues](https://github.com/chemsallioua/algeria-map-svg/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/chemsallioua/algeria-map-svg/discussions)
-- **Email**: support@example.com (replace with your contact)
 
 ---
 
