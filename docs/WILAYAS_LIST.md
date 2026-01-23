@@ -60,14 +60,14 @@
 | 56 | Djanet | جانت | djanet-56 |
 | 57 | El M'Ghair | المغير | el-mghair-57 |
 | 58 | El Meniaa | المنيعة | el-meniaa-58 |
-| 59 | Ouargla New | ورقلة الجديدة | ouargla-new-59 |
-| 60 | Laghouat New | الأغواط الجديدة | laghouat-new-60 |
-| 61 | Illizi New | إليزي الجديدة | illizi-new-61 |
-| 62 | Béchar New | بشار الجديدة | bechar-new-62 |
-| 63 | Tindouf New | تندوف الجديدة | tindouf-new-63 |
-| 64 | Adrar New | أدرار الجديدة | adrar-new-64 |
-| 65 | Tamanrasset New | تمنراست الجديدة | tamanrasset-new-65 |
-| 66 | El Bayadh New | البيض الجديدة | el-bayadh-new-66 |
-| 67 | Naâma New | النعامة الجديدة | naama-new-67 |
-| 68 | Aïn Témouchent New | عين تموشنت الجديدة | ain-temouchent-new-68 |
-| 69 | Ghardaïa New | غرداية الجديدة | ghardaia-new-69 |
+| 59 | Aflou | أفلو | aflou-59 |
+| 60 | Brikcha (Bir El Ater) | بريكشة (بئر العاتر) | brikcha-60 |
+| 61 | El-Qantara | القنطرة | el-qantara-61 |
+| 62 | Bir El Ater | بئر العاتر | bir-el-ater-62 |
+| 63 | El Aricha | العريشة | el-aricha-63 |
+| 64 | Ksar Chelala | قصر الشلالة | ksar-chelala-64 |
+| 65 | Aïn Oussera | عين وسارة | ain-oussera-65 |
+| 66 | M'saâd | مسعد | msaad-66 |
+| 67 | Ksar El Boukhari | قصر البخاري | ksar-el-boukhari-67 |
+| 68 | Boussaâda | بوسعادة | boussaada-68 |
+| 69 | El Abiodh Sidi Cheikh | الأبيض سيدي الشيخ | el-abiodh-sidi-cheikh-69 |
