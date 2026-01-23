@@ -61,13 +61,13 @@
 | 57 | El M'Ghair | المغير | el-mghair-57 |
 | 58 | El Meniaa | المنيعة | el-meniaa-58 |
 | 59 | Aflou | أفلو | aflou-59 |
-| 60 | Brikcha (Bir El Ater) | بريكشة (بئر العاتر) | brikcha-60 |
-| 61 | El-Qantara | القنطرة | el-qantara-61 |
-| 62 | Bir El Ater | بئر العاتر | bir-el-ater-62 |
-| 63 | El Aricha | العريشة | el-aricha-63 |
-| 64 | Ksar Chelala | قصر الشلالة | ksar-chelala-64 |
-| 65 | Aïn Oussera | عين وسارة | ain-oussera-65 |
-| 66 | M'saâd | مسعد | msaad-66 |
-| 67 | Ksar El Boukhari | قصر البخاري | ksar-el-boukhari-67 |
-| 68 | Boussaâda | بوسعادة | boussaada-68 |
-| 69 | El Abiodh Sidi Cheikh | الأبيض سيدي الشيخ | el-abiodh-sidi-cheikh-69 |
+| 60 | El Abiodh Sidi Cheikh | الأبيض سيدي الشيخ | el-abiodh-sidi-cheikh-60 |
+| 61 | El Aricha | العريشة | el-aricha-61 |
+| 62 | El Kantara | القنطرة | el-kantara-62 |
+| 63 | Barika | بريكة | barika-63 |
+| 64 | Bou Saâda | بوسعادة | bou-saada-64 |
+| 65 | Bir El Ater | بئر العاتر | bir-el-ater-65 |
+| 66 | Ksar El Boukhari | قصر البخاري | ksar-el-boukhari-66 |
+| 67 | Ksar Chellala | قصر الشلالة | ksar-chellala-67 |
+| 68 | Aïn Oussara | عين وسارة | ain-oussara-68 |
+| 69 | M'saâd | مسعد | msaad-69 |
