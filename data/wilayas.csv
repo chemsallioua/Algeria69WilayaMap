@@ -1,0 +1,70 @@
+code,slug,name_latin,name_ar,parent_code
+01,adrar-01,Adrar,أدرار,
+02,chlef-02,Chlef,الشلف,
+03,laghouat-03,Laghouat,الأغواط,
+04,oum-el-bouaghi-04,Oum El Bouaghi,أم البواقي,
+05,batna-05,Batna,باتنة,
+06,bejaia-06,Béjaïa,بجاية,
+07,biskra-07,Biskra,بسكرة,
+08,bechar-08,Béchar,بشار,
+09,blida-09,Blida,البليدة,
+10,bouira-10,Bouira,البويرة,
+11,tamanrasset-11,Tamanrasset,تمنراست,
+12,tebessa-12,Tébessa,تبسة,
+13,tlemcen-13,Tlemcen,تلمسان,
+14,tiaret-14,Tiaret,تيارت,
+15,tizi-ouzou-15,Tizi Ouzou,تيزي وزو,
+16,alger-16,Alger,الجزائر,
+17,djelfa-17,Djelfa,الجلفة,
+18,jijel-18,Jijel,جيجل,
+19,setif-19,Sétif,سطيف,
+20,saida-20,Saïda,سعيدة,
+21,skikda-21,Skikda,سكيكدة,
+22,sidi-bel-abbes-22,Sidi Bel Abbès,سيدي بلعباس,
+23,annaba-23,Annaba,عنابة,
+24,guelma-24,Guelma,قالمة,
+25,constantine-25,Constantine,قسنطينة,
+26,medea-26,Médéa,المدية,
+27,mostaganem-27,Mostaganem,مستغانم,
+28,msila-28,M'Sila,المسيلة,
+29,mascara-29,Mascara,معسكر,
+30,ouargla-30,Ouargla,ورقلة,
+31,oran-31,Oran,وهران,
+32,el-bayadh-32,El Bayadh,البيض,
+33,illizi-33,Illizi,إليزي,
+34,bordj-bou-arreridj-34,Bordj Bou Arréridj,برج بوعريريج,
+35,boumerdes-35,Boumerdès,بومرداس,
+36,el-tarf-36,El Tarf,الطارف,
+37,tindouf-37,Tindouf,تندوف,
+38,tissemsilt-38,Tissemsilt,تيسمسيلت,
+39,el-oued-39,El Oued,الوادي,
+40,khenchela-40,Khenchela,خنشلة,
+41,souk-ahras-41,Souk Ahras,سوق أهراس,
+42,tipaza-42,Tipaza,تيبازة,
+43,mila-43,Mila,ميلة,
+44,ain-defla-44,Aïn Defla,عين الدفلى,
+45,naama-45,Naâma,النعامة,
+46,ain-temouchent-46,Aïn Témouchent,عين تموشنت,
+47,ghardaia-47,Ghardaïa,غرداية,
+48,relizane-48,Relizane,غليزان,
+49,timimoun-49,Timimoun,تيميمون,01
+50,bordj-badji-mokhtar-50,Bordj Badji Mokhtar,برج باجي مختار,01
+51,ouled-djellal-51,Ouled Djellal,أولاد جلال,07
+52,beni-abbes-52,Béni Abbès,بني عباس,08
+53,in-salah-53,In Salah,عين صالح,11
+54,in-guezzam-54,In Guezzam,عين قزام,11
+55,touggourt-55,Touggourt,توقرت,30
+56,djanet-56,Djanet,جانت,33
+57,el-mghair-57,El M'Ghair,المغير,39
+58,el-meniaa-58,El Meniaa,المنيعة,47
+59,aflou-59,Aflou,آفلو,03
+60,barika-60,Barika,بريكة,05
+61,el-kantara-61,El Kantara,القنطرة,07
+62,bir-el-ater-62,Bir El Ater,بئر العاتر,12
+63,el-aricha-63,El Aricha,العريشة,13
+64,ksar-chellala-64,Ksar Chellala,قصر الشلالة,14
+65,ain-oussera-65,Aïn Oussera,عين وسارة,17
+66,messaad-66,Messaad,مسعد,17
+67,ksar-el-boukhari-67,Ksar El Boukhari,قصر البخاري,26
+68,bou-saada-68,Bou Saâda,بوسعادة,28
+69,el-abiodh-sidi-cheikh-69,El Abiodh Sidi Cheikh,الأبيض سيدي الشيخ,32

@@ -2,6 +2,8 @@
 
 ## Basic HTML Integration
 
+To style and script the wilayas, the SVG has to be inline in the page. An `<img>` tag shows the map, but its paths can't be styled or clicked. You can paste the file's content into the page, or load it:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -11,25 +13,31 @@
             width: 100%;
             height: auto;
         }
-        .cls-1 {
+        #algeria-map-69-wilaya path {
             fill: #bcbec0;
             stroke: #333;
-            stroke-width: 2;
             cursor: pointer;
             transition: fill 0.3s;
         }
-        .cls-1:hover {
+        #algeria-map-69-wilaya path:hover {
             fill: #2ecc71;
         }
     </style>
 </head>
 <body>
-    <div id="map-container">
-        <!-- Include the SVG file here -->
-    </div>
+    <div id="map-container"></div>
+    <script>
+        fetch('map-algeria-69-wilayas.svg')
+            .then(response => response.text())
+            .then(svg => {
+                document.getElementById('map-container').innerHTML = svg;
+            });
+    </script>
 </body>
 </html>
 ```
+
+`fetch` needs the page to be served over HTTP (for example `npx serve` or `python -m http.server`); it does not work from a `file://` URL.
 
 ## JavaScript Interaction
 
@@ -44,7 +52,7 @@ wilayas.forEach(wilaya => {
         const name = this.getAttribute('data-name');
         const nameLatin = this.getAttribute('data-name-latin');
         const nameArabic = this.getAttribute('data-name-ar');
-        
+
         console.log(`Clicked: ${nameLatin} (${nameArabic}) - ID: ${id}`);
     });
 });
@@ -61,32 +69,38 @@ function highlightWilaya(wilayaId) {
 highlightWilaya('16');
 ```
 
+The ids start with a digit, so in CSS and `querySelector` write `[id="16"]` instead of `#16`.
+
 ## React Component Example
 
 ```jsx
-import React, { useState } from 'react';
-import AlgeriaMap from './map-algeria-69.svg';
+import React, { useEffect, useState } from 'react';
 
 function InteractiveMap() {
+    const [svg, setSvg] = useState('');
     const [selectedWilaya, setSelectedWilaya] = useState(null);
 
+    useEffect(() => {
+        fetch('/map-algeria-69-wilayas.svg')
+            .then(response => response.text())
+            .then(setSvg);
+    }, []);
+
     const handleWilayaClick = (event) => {
-        const target = event.target;
-        if (target.tagName === 'path') {
+        const path = event.target.closest('path');
+        if (path) {
             setSelectedWilaya({
-                id: target.id,
-                name: target.getAttribute('data-name'),
-                nameLatin: target.getAttribute('data-name-latin'),
-                nameArabic: target.getAttribute('data-name-ar')
+                id: path.id,
+                name: path.dataset.name,
+                nameLatin: path.dataset.nameLatin,
+                nameArabic: path.dataset.nameAr
             });
         }
     };
 
     return (
         <div>
-            <div onClick={handleWilayaClick}>
-                <img src={AlgeriaMap} alt="Algeria Map" />
-            </div>
+            <div onClick={handleWilayaClick} dangerouslySetInnerHTML={{ __html: svg }} />
             {selectedWilaya && (
                 <div className="info-panel">
                     <h3>{selectedWilaya.nameLatin}</h3>
@@ -101,12 +115,14 @@ function InteractiveMap() {
 export default InteractiveMap;
 ```
 
+Put the SVG in your `public/` folder. If you import it as a component with SVGR instead, turn off SVGO's id cleanup (`cleanupIds`), or the `id` attributes will be renamed.
+
 ## Data Visualization Example
 
 ```javascript
-// Color wilayas based on data
+// Color wilayas based on data (sample values)
 const populationData = {
-    '16': 3000000, // Algiers
+    '16': 3000000, // Alger
     '05': 1200000, // Batna
     // ... more data
 };
@@ -115,11 +131,11 @@ function colorByPopulation(data) {
     Object.keys(data).forEach(wilayaId => {
         const wilaya = document.getElementById(wilayaId);
         const population = data[wilayaId];
-        
+
         // Color gradient based on population
         const intensity = Math.min(population / 3000000, 1);
         const color = `rgba(231, 76, 60, ${intensity})`;
-        
+
         wilaya.style.fill = color;
     });
 }
@@ -128,6 +144,8 @@ colorByPopulation(populationData);
 ```
 
 ## Styling Recommendations
+
+The SVG embeds a default style (grey fill, 1px white borders). Any rule in your page that targets `#algeria-map-69-wilaya path` overrides it.
 
 ### CSS Variables
 
@@ -157,6 +175,8 @@ colorByPopulation(populationData);
     stroke-width: 3px;
 }
 ```
+
+Borders use `vector-effect: non-scaling-stroke`, so `stroke-width` is in screen pixels whatever the size of the map.
 
 ### Responsive Design
 
